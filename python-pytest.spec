@@ -13,6 +13,7 @@ Group:		Development/Python
 Url:		http://pytest.org
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
+BuildRequires:	python-setuptools
 
 %description
 py.test is a simple cross-project testing tool for Python.
