@@ -1,9 +1,9 @@
 %define module	pytest
 %define name	python-%{module}
-%define version 2.1.1
+%define version 2.1.3
 %define release %mkrel 1
 
-Summary:	A simple and popular testing tool for Python
+Summary:	Cross-project testing tool for Python
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
