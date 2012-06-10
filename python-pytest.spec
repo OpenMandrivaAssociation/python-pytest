@@ -18,7 +18,8 @@ Group:		Development/Python
 Url:		http://pytest.org
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
-BuildRequires:	python-setuptools, python-sphinx
+Requires:	python-py >= 1.4.8
+BuildRequires:	python-setuptools, python-sphinx, python-py >= 1.4.8
 
 %description
 py.test is a simple cross-project testing tool for Python.
