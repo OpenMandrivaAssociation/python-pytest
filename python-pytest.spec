@@ -27,6 +27,7 @@ py.test is a simple cross-project testing tool for Python.
 %setup -q -n %{module}-%{version}
 %__python setup.py build
 pushd doc
+export PYTHONPATH=../build/lib
 make html
 popd
 
