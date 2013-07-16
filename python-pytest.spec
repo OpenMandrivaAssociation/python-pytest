@@ -1,6 +1,6 @@
 %define module	pytest
 %define name	python-%{module}
-%define version 2.2.4
+%define version 2.3.0
 %define	rel		1
 %if %mdkversion < 201100
 %define release %mkrel %rel
@@ -27,7 +27,7 @@ py.test is a simple cross-project testing tool for Python.
 %prep
 %setup -q -n %{module}-%{version}
 %__python setup.py build
-pushd doc
+pushd doc/en
 export PYTHONPATH=../build/lib
 make html
 popd
@@ -41,12 +41,16 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc CHANGELOG README.txt doc/_build/html
+%doc CHANGELOG README.txt doc/en/_build/html
 %_bindir/py.test*
 %py_sitedir/*pytest*
 
 
 %changelog
+* Fri Oct 19 2012 Lev Givon <lev@mandriva.org> 2.3.0-1
++ Revision: 819095
+- Update to 2.3.0.
+
 * Sun Jun 10 2012 Lev Givon <lev@mandriva.org> 2.2.4-1
 + Revision: 804349
 - Update to 2.2.4.
