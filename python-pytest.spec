@@ -2,9 +2,9 @@
 
 Summary:	Cross-project testing tool for Python
 Name:		python-%{module}
-Version:	2.3.0
-Release:	2
-Source0:	http://pypi.python.org/packages/source/p/pytest/pytest-%{version}.zip
+Version:	2.5.2
+Release:	1
+Source0:	http://pypi.python.org/packages/source/p/pytest/pytest-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
 Url:		http://pytest.org
@@ -33,3 +33,4 @@ PYTHONDONTWRITEBYTECODE=  python setup.py install --root=%{buildroot}
 %doc CHANGELOG README.txt doc/en/_build/html
 %{_bindir}/py.test*
 %{py_puresitedir}/*pytest*
+
