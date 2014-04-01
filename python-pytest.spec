@@ -31,7 +31,7 @@ PYTHONDONTWRITEBYTECODE=  python setup.py install --root=%{buildroot}
 %clean
 
 %files
-%doc CHANGELOG README.txt doc/en/_build/html
+%doc CHANGELOG  doc/en/_build/html
 %{_bindir}/py.test*
 %{py_puresitedir}/*pytest*
 
