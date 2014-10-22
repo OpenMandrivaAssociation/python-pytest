@@ -1,4 +1,5 @@
 removed_sources:
   pytest-2.3.0.zip: 9cfb276e42bae9eb32e532f45e36f56aa2832006
-sources:
   pytest-2.5.2.tar.gz: a8181eed3bf46ff9fdd0318be8e4ce44b6bd942d
+sources:
+  pytest-2.6.3.tar.gz: 70ca1a9b2b90232e835eb7698f23208c267ef9fd

@@ -3,7 +3,7 @@
 Summary:	Cross-project testing tool for Python
 
 Name:		python-%{module}
-Version:	2.5.2
+Version:	2.6.3
 Release:	1
 Source0:	http://pypi.python.org/packages/source/p/pytest/pytest-%{version}.tar.gz
 License:	MIT
@@ -18,7 +18,8 @@ py.test is a simple cross-project testing tool for Python.
 
 %prep
 %setup -q -n %{module}-%{version}
-python setup.py build
+export PYTHONDONTWRITEBYTECODE=1
+python -B setup.py build
 
 pushd doc/en
 export PYTHONPATH=../../build/lib
@@ -26,7 +27,7 @@ make html
 popd
 
 %install
-PYTHONDONTWRITEBYTECODE=  python setup.py install --root=%{buildroot}
+PYTHONDONTWRITEBYTECODE=1  python -B setup.py install --root=%{buildroot}
 
 %clean
 
