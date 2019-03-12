@@ -11,7 +11,7 @@ Group:		Development/Python
 Url:		http://pytest.org
 BuildArch:	noarch
 Requires:	python-py >= 1.4.8
-BuildRequires:	python-setuptools
+BuildRequires:	python3-setuptools
 BuildRequires:	python-sphinx
 BuildRequires:	python-py >= 1.4.8
 
