@@ -37,4 +37,4 @@ PYTHONDONTWRITEBYTECODE=1  python -B setup.py install --root=%{buildroot}
 %doc CHANGELOG.rst
 %{_bindir}/py.test*
 %{_bindir}/pytest
-%{py_puresitedir}/*pytest*
+%{py_puresitedir}/*
