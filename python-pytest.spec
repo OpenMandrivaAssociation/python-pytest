@@ -14,6 +14,8 @@ Requires:	python-py >= 1.4.8
 BuildRequires:	python-setuptools
 BuildRequires:	python-sphinx
 BuildRequires:	python-py >= 1.4.8
+BuildRequires:	python-six
+
 
 %description
 py.test is a simple cross-project testing tool for Python.
