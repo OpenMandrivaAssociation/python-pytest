@@ -12,6 +12,7 @@ Url:		http://pytest.org
 BuildArch:	noarch
 Requires:	python-py >= 1.4.8
 BuildRequires:	python-setuptools
+BuildRequires:  python-setuptools-scm
 BuildRequires:	python-sphinx
 BuildRequires:	python-py >= 1.4.8
 BuildRequires:	python-six
