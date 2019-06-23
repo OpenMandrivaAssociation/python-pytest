@@ -3,9 +3,9 @@
 Summary:	Cross-project testing tool for Python
 
 Name:		python-%{module}
-Version:	4.0.2
+Version:	4.6.3
 Release:	1
-Source0:	http://pypi.python.org/packages/source/p/pytest/pytest-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/80/0f/6e9c66f70c16dff5b31a1493fea55ecd5b8fc138fe6a21c21365c33b5d62/pytest-4.6.3.tar.gz
 License:	MIT
 Group:		Development/Python
 Url:		http://pytest.org
