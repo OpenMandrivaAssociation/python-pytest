@@ -3,9 +3,9 @@
 Summary:	Cross-project testing tool for Python
 
 Name:		python-%{module}
-Version:	5.3.5
+Version:	5.4.1
 Release:	1
-Source0:	https://files.pythonhosted.org/packages/f0/5f/41376614e41f7cdee02d22d1aec1ea028301b4c6c4523a5f7ef8e960fe0b/pytest-5.3.5.tar.gz
+Source0:	https://files.pythonhosted.org/packages/6d/4e/572aed20422dee7fa2bd27995b2a53a32de90c1826e5531c9df6d3ea77ed/pytest-5.4.1.tar.gz
 License:	MIT
 Group:		Development/Python
 Url:		http://pytest.org
