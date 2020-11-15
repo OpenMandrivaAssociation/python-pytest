@@ -41,3 +41,5 @@ PYTHONDONTWRITEBYTECODE=1  python -B setup.py install --root=%{buildroot}
 %{_bindir}/py.test*
 %{_bindir}/pytest
 #{py_puresitedir}/*
+%{python_sitelib}/%{module}
+%{python_sitelib}/%{module}-%{version}-py?.?.egg-info
