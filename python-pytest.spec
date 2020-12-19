@@ -3,8 +3,8 @@
 Summary:	Cross-project testing tool for Python
 
 Name:		python-%{module}
-Version:	6.1.2
-Release:	3
+Version:	6.2.1
+Release:	1
 Source0:	https://files.pythonhosted.org/packages/20/4c/d7b19b8661be78461fff0392e33943784340424921578fe1bf300ef59831/%{module}-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
