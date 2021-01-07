@@ -39,6 +39,8 @@ PYTHONDONTWRITEBYTECODE=1  python -B setup.py install --root=%{buildroot}
 
 #%%clean
 
+echo %{python3_version}
+
 %files
 %doc CHANGELOG.rst
 #%{python3_sitelib}/%{module}-%{version}-py%{python3_version}.egg-info/
