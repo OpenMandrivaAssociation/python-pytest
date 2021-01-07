@@ -16,6 +16,7 @@ BuildRequires:  python-setuptools_scm
 BuildRequires:	python-sphinx
 BuildRequires:	python-py >= 1.4.8
 BuildRequires:	python-six
+BuildRequires:	python(distutils)
 
 #Provides:	python%{py3_ver}dist(pytest) = %{EVRD}
 
