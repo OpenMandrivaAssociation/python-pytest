@@ -24,6 +24,7 @@ py.test is a simple cross-project testing tool for Python.
 
 %prep
 %setup -q -n %{module}-%{version}
+rm -rf %{pypi_name}.egg-info
 
 %build
 export PYTHONDONTWRITEBYTECODE=1
@@ -43,9 +44,9 @@ echo %{python3_version}
 
 %files
 %doc CHANGELOG.rst
-#%{python3_sitelib}/%{module}-%{version}-py%{python3_version}.egg-info/
-%{python_sitelib}/%{module}-*-py*.egg-info
-%{python_sitelib}/%{module}-*-py*.egg-info/PKG-INFO
+%{python3_sitelib}/%{module}-%{version}-py%{python3_version}.egg-info/
+#%%{python_sitelib}/%{module}-*-py*.egg-info
+#%%{python_sitelib}/%{module}-*-py*.egg-info/PKG-INFO
 %{_bindir}/py.test*
 %{_bindir}/pytest
 %{python3_sitelib}/_%{module}
