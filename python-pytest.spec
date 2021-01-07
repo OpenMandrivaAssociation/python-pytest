@@ -24,6 +24,8 @@ py.test is a simple cross-project testing tool for Python.
 
 %prep
 %setup -q -n %{module}-%{version}
+
+%build
 export PYTHONDONTWRITEBYTECODE=1
 python -B setup.py build
 
