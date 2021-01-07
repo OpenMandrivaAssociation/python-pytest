@@ -41,15 +41,6 @@ PYTHONDONTWRITEBYTECODE=1  python -B setup.py install --root=%{buildroot}
 %doc CHANGELOG.rst
 %{_bindir}/py.test*
 %{_bindir}/pytest
-#{py_puresitedir}/*
-%{python_sitelib}/%{module}
-#{python_sitelib}/%{module}-%{version}-py?.?.egg-info
-%{python_sitelib}/%{module}-*-py*.egg-info
-%{python_sitelib}/%{module}-*-py*.egg-info/PKG-INFO
-%{python_sitelib}/_pytest/*
-%{python_sitelib}/%{module}-*-py*.egg-info/SOURCES.txt
-%{python_sitelib}/%{module}-*-py*.egg-info/dependency_links.txt
-%{python_sitelib}/%{module}-*-py*.egg-info/entry_points.txt
-%{python_sitelib}/%{module}-*-py*.egg-info/not-zip-safe
-%{python_sitelib}/%{module}-*-py*.egg-info/requires.txt
-%{python_sitelib}/%{module}-*-py*.egg-info/top_level.txt
+%{python3_sitelib}/_%{module}
+%{python3_sitelib}/%{module}
+%{python3_sitelib}/%{module}-%{version}-py%{python3_version}.egg-info
