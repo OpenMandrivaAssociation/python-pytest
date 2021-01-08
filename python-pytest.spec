@@ -40,14 +40,14 @@ popd
 PYTHONDONTWRITEBYTECODE=1  python -B setup.py install --root=%{buildroot}
 
 #%%clean
+mv %{python_sitelib}/%{module}-*-py*.egg-info  %{python_sitelib}/%{module}-%{version}-py{python3_version}.egg-info
 
-echo %{python3_version}
 
 %files
 %doc CHANGELOG.rst
-%{python3_sitelib}/%{module}-%{version}-py%{python3_version}.egg-info/
+%{python3_sitelib}/%{module}-%{version}-py%{python3_version}.egg-info
 #%%{python_sitelib}/%{module}-*-py*.egg-info
-#%%{python_sitelib}/%{module}-*-py*.egg-info/PKG-INFO
+#%{python_sitelib}/%{module}-*-py*.egg-info/PKG-INFO
 %{_bindir}/py.test*
 %{_bindir}/pytest
 %{python3_sitelib}/_%{module}
