@@ -40,8 +40,8 @@ popd
 PYTHONDONTWRITEBYTECODE=1  python -B setup.py install --root=%{buildroot}
 
 #%%clean
-mv %{python_sitelib}/%{module}-*-py*.egg-info  %{python_sitelib}/%{module}-%{version}-py{python3_version}.egg-info
-
+mv %{buildroot}%{python_sitelib}/%{module}-*-py%{python3_version}.egg-info  %{buildroot}/%{python_sitelib}/%{module}-%{version}-py%{python3_version}.egg-info
+#mv %{buildroot}%{python_sitelib}/%{module}-6.2.1-py%{python3_version}.egg-info  %{buildroot}/%{python_sitelib}/py%{python3_version}.egg-info
 
 %files
 %doc CHANGELOG.rst
