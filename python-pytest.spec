@@ -16,7 +16,6 @@ BuildRequires:  python-setuptools_scm
 BuildRequires:	python-sphinx
 BuildRequires:	python-py >= 1.4.8
 BuildRequires:	python-six
-BuildRequires:	python-distutils
 
 #Provides:	python%{py3_ver}dist(pytest) = %{EVRD}
 
@@ -25,7 +24,8 @@ py.test is a simple cross-project testing tool for Python.
 
 %prep
 %setup -q -n %{module}-%{version}
-rm -rf %{pypi_name}.egg-info
+cp -R src/%{module}.egg-info ./
+#rm -rf %{pypi_name}.egg-info
 
 %build
 export PYTHONDONTWRITEBYTECODE=1
