@@ -1,0 +1,11 @@
+diff --git a/setup.cfg b/setup.cfg
+index 09c07d5bb..537053558 100644
+--- a/setup.cfg
++++ b/setup.cfg
+@@ -1,5 +1,6 @@
+ [metadata]
+ name = pytest
++version = 6.3.1
+ description = pytest: simple powerful testing with Python
+ long_description = file: README.rst
+ long_description_content_type = text/x-rst
