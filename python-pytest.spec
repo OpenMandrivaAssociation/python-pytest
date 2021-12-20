@@ -3,9 +3,9 @@
 Summary:	Cross-project testing tool for Python
 
 Name:		python-%{module}
-Version:	6.2.4
+Version:	6.2.5
 Release:	1
-Source0:	https://files.pythonhosted.org/packages/20/4c/d7b19b8661be78461fff0392e33943784340424921578fe1bf300ef59831/%{module}-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/4b/24/7d1f2d2537de114bdf1e6875115113ca80091520948d370c964b88070af2/pytest-6.2.5.tar.gz
 Patch0:         fix-version-issue.patch
 License:	MIT
 Group:		Development/Python
@@ -44,7 +44,7 @@ popd
 
 %files
 %doc CHANGELOG.rst
-%{python3_sitelib}/%{module}-%{version}-py%{python3_version}.egg-info
+%{python3_sitelib}/%{module}-*-py*.egg-info
 %{_bindir}/py.test*
 %{_bindir}/pytest
 %{python3_sitelib}/_%{module}
