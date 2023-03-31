@@ -4,7 +4,7 @@ Summary:	Cross-project testing tool for Python
 
 Name:		python-%{module}
 Version:	7.1.2
-Release:	1
+Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/p/pytest/pytest-%{version}.tar.gz
 Patch0:         fix-version-issue.patch
 License:	MIT
