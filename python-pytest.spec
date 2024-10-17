@@ -9,7 +9,7 @@ Source0:	https://files.pythonhosted.org/packages/source/p/pytest/pytest-%{versio
 Patch0:         fix-version-issue.patch
 License:	MIT
 Group:		Development/Python
-Url:		http://pytest.org
+Url:		https://pytest.org
 BuildArch:	noarch
 Requires:	python-py >= 1.4.8
 BuildRequires:	python-setuptools
