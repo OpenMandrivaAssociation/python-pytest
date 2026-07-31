@@ -3,7 +3,7 @@
 Summary:	Cross-project testing tool for Python
 
 Name:		python-%{module}
-Version:	9.0.2
+Version:	9.1.1
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/p/pytest/pytest-%{version}.tar.gz
 License:	MIT
