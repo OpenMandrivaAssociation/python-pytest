@@ -35,3 +35,4 @@ rm -rf %{buildroot}%{python_sitelib}/__pycache__
 %{_bindir}/pytest
 %{python_sitelib}/_%{module}
 %{python_sitelib}/%{module}
+%{python_sitelib}/py.py
