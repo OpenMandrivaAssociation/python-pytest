@@ -10,16 +10,17 @@ License:	MIT
 Group:		Development/Python
 Url:		https://pytest.org
 BuildArch:	noarch
-Requires:	python-py >= 1.4.8
 BuildSystem:	python
 BuildRequires:	python%{pyver}dist(setuptools)
-BuildRequires:  python%{pyver}dist(setuptools-scm)
-BuildRequires:	python%{pyver}dist(sphinx)
-BuildRequires:	python%{pyver}dist(py) >= 1.4.8
-BuildRequires:	python%{pyver}dist(six)
+BuildRequires:	python%{pyver}dist(setuptools-scm)
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(wheel)
 BuildRequires:	python%{pyver}dist(iniconfig)
+BuildRequires:	python%{pyver}dist(pluggy)
+BuildRequires:	python%{pyver}dist(packaging)
+
+%build -p
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 
 %description
 py.test is a simple cross-project testing tool for Python.
@@ -34,4 +35,3 @@ rm -rf %{buildroot}%{python_sitelib}/__pycache__
 %{_bindir}/pytest
 %{python_sitelib}/_%{module}
 %{python_sitelib}/%{module}
-%{python_sitelib}/py.py
